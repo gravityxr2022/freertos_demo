@@ -1,0 +1,21 @@
+22:28:14 **** Build of configuration Debug for project freertos ****
+make all 
+Building file: ../src/freertos_hello_world.c
+Invoking: ARM R5 gcc compiler
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/freertos_hello_world.o" -mcpu=cortex-r5 -mfloat-abi=hard  -mfpu=vfpv3-d16 -I/media/data/jychang/zcu106_freertos_demo/zcu106/export/zcu106/sw/zcu106/freertos10_xilinx_psu_cortexr5_0/bspinclude/include -MMD -MP -MF"src/freertos_hello_world.d" -MT"src/freertos_hello_world.o" -o "src/freertos_hello_world.o" "../src/freertos_hello_world.c"
+Finished building: ../src/freertos_hello_world.c
+ 
+Building target: freertos.elf
+Invoking: ARM R5 gcc linker
+armr5-none-eabi-gcc -mcpu=cortex-r5 -mfloat-abi=hard -mfpu=vfpv3-d16 -Wl,-T -Wl,../src/lscript.ld -L/media/data/jychang/zcu106_freertos_demo/zcu106/export/zcu106/sw/zcu106/freertos10_xilinx_psu_cortexr5_0/bsplib/lib -o "freertos.elf"  ./src/freertos_hello_world.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group
+Finished building target: freertos.elf
+ 
+Invoking: ARM R5 Print Size
+armr5-none-eabi-size freertos.elf  |tee "freertos.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  71729	   4676	  88752	 165157	  28525	freertos.elf
+Finished building: freertos.elf.size
+ 
+
+22:28:15 Build Finished (took 217ms)
+

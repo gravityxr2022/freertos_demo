@@ -1,0 +1,9 @@
+22:28:15 **** Build of configuration Debug for project freertos_system ****
+make all 
+Generating bif file for the system project
+Executing command '::scw::generate_bif -xpfm /media/data/jychang/zcu106_freertos_demo/zcu106/export/zcu106/zcu106.xpfm -domains freertos10_xilinx_psu_cortexr5_0 -bifpath /media/data/jychang/zcu106_freertos_demo/freertos_system/Debug/system.bif' on XSCT
+sdcard_gen --xpfm /media/data/jychang/zcu106_freertos_demo/zcu106/export/zcu106/zcu106.xpfm --sys_config zcu106 --bif /media/data/jychang/zcu106_freertos_demo/freertos_system/Debug/system.bif --no_bitstream --elf /media/data/jychang/zcu106_freertos_demo/freertos/Debug/freertos.elf,psu_cortexr5_0
+Running /media/ylab115/Xilinx/Vitis/2021.2/bin/bootgen -arch zynqmp -image /media/data/jychang/zcu106_freertos_demo/freertos_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+22:28:20 Build Finished (took 5s.323ms)
+

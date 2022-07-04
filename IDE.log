@@ -1,0 +1,16 @@
+22:26:52 INFO  : Platform repository initialization has completed.
+22:26:52 INFO  : Launching XSCT server: xsct -n  -interactive /media/data/jychang/zcu106_freertos_demo/temp_xsdb_launch_script.tcl
+22:26:52 INFO  : Registering command handlers for Vitis TCF services
+22:26:54 INFO  : XSCT server has started successfully.
+22:26:54 INFO  : plnx-install-location is set to ''
+22:26:54 INFO  : Successfully done setting XSCT server connection channel  
+22:26:54 INFO  : Successfully done setting workspace for the tool. 
+22:26:54 INFO  : Successfully done query RDI_DATADIR 
+22:27:31 INFO  : Result from executing command 'getProjects': zcu106
+22:27:31 INFO  : Result from executing command 'getPlatforms': 
+22:27:31 WARN  : An unexpected exception occurred in the module 'platform project logging'
+22:27:31 INFO  : Platform 'zcu106' is added to custom repositories.
+22:27:36 INFO  : Platform 'zcu106' is added to custom repositories.
+22:28:06 INFO  : Result from executing command 'getProjects': zcu106
+22:28:06 INFO  : Result from executing command 'getPlatforms': zcu106|/media/data/jychang/zcu106_freertos_demo/zcu106/export/zcu106/zcu106.xpfm
+22:28:09 INFO  : Checking for BSP changes to sync application flags for project 'freertos'...

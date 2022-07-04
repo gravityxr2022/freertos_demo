@@ -1,0 +1,82 @@
+/*
+
+Xilinx Vitis v2021.2.0 (64-bit) [Major: 2021, Minor: 2]
+SW Build 3363750 on 2021-10-16-13:10:08
+
+Process ID (PID): 1323774
+License: Customer
+
+Current time: 	Mon Jul 04 22:26:52 CST 2022
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Ubuntu
+OS Version: 5.13.0-52-generic
+OS Architecture: amd64
+Available processors (cores): 20
+
+Display: :2
+Screen size: 3840x2160
+Available screens: 1
+Available disk space: 232 GB
+
+Java version: 	11.0.11 64-bit
+Java home: 	/media/ylab115/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9
+Java executable location: 	/media/ylab115/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9/bin/java
+Java initial memory (-Xms): 	64 MB
+Java maximum memory (-Xmx):	 1,024 MB
+
+Java library paths: /media/ylab115/Xilinx/Vitis/2021.2/tps/lnx64/javafx-sdk-11.0.2/lib:/media/ylab115/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu/20:/media/ylab115/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu:/media/ylab115/Xilinx/Vitis/2021.2/lib/lnx64.o:/media/ylab115/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9/lib/:/media/ylab115/Xilinx/Vitis/2021.2/tps/lnx64/jre11.0.11_9/lib//server:/media/ylab115/Xilinx/Vitis/2021.2/lib/lnx64.o:/media/ylab115/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu/20:/media/ylab115/Xilinx/Vitis/2021.2/lib/lnx64.o/Ubuntu:/media/ylab115/Xilinx/Vitis/2021.2/lib/lnx64.o:/media/ylab115/Xilinx/Vitis/2021.2/tps/lnx64/python-3.8.3/lib:/media/ylab115/Xilinx/Vitis/2021.2/aietools/lib/lnx64.o:/media/ylab115/Xilinx/Vitis/2021.2/bin/../lnx64/tools/dot/lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+
+Java class paths: /media/ylab115/Xilinx/Vitis/2021.2/eclipse/lnx64.o//plugins/org.eclipse.equinox.launcher_1.5.700.v20200207-2156.jar
+LD_LIBRARY_PATH: /media/ylab115/Xilinx/Vitis
+
+User name: 	ylab115
+User home directory: /home/ylab115
+User working directory: /media/data/jychang/zcu106_freertos_demo
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /media/ylab115/Xilinx/Vitis
+HDI_APPROOT: /media/ylab115/Xilinx/Vitis/2021.2
+RDI_DATADIR: /media/ylab115/Xilinx/Vitis/2021.2/data
+RDI_BINDIR: /media/ylab115/Xilinx/Vitis/2021.2/bin
+
+Vitis preferences directory: /home/ylab115/.Xilinx/Vitis/2021.2/
+Vitis workspace directory: /media/data/jychang/zcu106_freertos_demo
+Vitis workspace log file location: /media/data/jychang/zcu106_freertos_demo/.metadata/.log
+Engine tmp dir: 	
+
+Xilinx Environment Variables
+----------------------------
+XILINX_DSP: 
+XILINX_HLS: /media/ylab115/Xilinx/Vitis_HLS/2021.2
+XILINX_PLANAHEAD: /media/ylab115/Xilinx/Vitis/2021.2
+XILINX_SDK: /media/ylab115/Xilinx/Vitis/2021.2
+XILINX_VITIS: /media/ylab115/Xilinx/Vitis/2021.2
+XILINX_VIVADO: /media/ylab115/Xilinx/Vivado/2021.2
+XILINX_VIVADO_HLS: /media/ylab115/Xilinx/Vivado/2021.2
+_RDI_DONT_SET_XILINX_AS_PATH: True
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+selectButton("Next", "New Application Project (Create a New Application Project)", "NewAppProjectWizard", "Button.NEXT");
+selectTab("Create a new platform from hardware", "New Application Project (Platform)", "NewAppProjectWizard", "CTabItem.CREATE_A_NEW_PLATFORM");
+selectButton("Browse", "New Application Project (Platform)", "NewAppProjectWizard", "Button.BROWSE");
+setFileDialog("/media/ylab115/Xilinx/Vitis/2021.2/data/embeddedsw/lib/fixed_hwplatforms/zcu106.xsa", "Create Platform from XSA", "SDXFileDialog", "Button.OK");
+selectRadioButton("psu_cortexa53_0", "New Application Project (Platform)", "NewAppProjectWizard", "Button.PSU_CORTEXA53_0");
+selectRadioButton("psu_cortexr5_0", "New Application Project (Platform)", "NewAppProjectWizard", "Button.PSU_CORTEXR5_0");
+selectButton("Next", "New Application Project (Platform)", "NewAppProjectWizard", "Button.NEXT");
+selectTreeTable("psu_cortexr5_0", "New Application Project (Application Project Details)", "NewAppProjectWizard", "ProjectDetailsPage");
+setTextField("freertos", "New Application Project (Application Project Details)", "NewAppProjectWizard", "Text.APPLICATION_PROJECT_NAME");
+selectButton("Next", "New Application Project (Application Project Details)", "NewAppProjectWizard", "Button.NEXT");
+selectCombo("freertos10_xilinx", "New Application Project (Domain)", "NewAppProjectWizard", "ComboViewer.OPERATING_SYSTEM");
+selectButton("Next", "New Application Project (Domain)", "NewAppProjectWizard", "Button.NEXT");
+selectButton("Finish", "New Application Project (Templates)", "NewAppProjectWizard", "Button.FINISH");
+activateView("Explorer", "ProjectExplorer", "CTabItem.EXPLORER");
+selectTreeTable("freertos_system", EventType.POPUP_TRIGGER_CLICK, "Explorer", "ProjectExplorer", "TreeViewer.NavigatorContentServiceContentProvider");
+selectMenuItem("Build Project", "Explorer", "ProjectExplorer", "MenuItem.BUILD_PROJECT");
+activateView("Console", "ConsoleView", "CTabItem.CONSOLE");
